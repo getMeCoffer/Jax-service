@@ -20,7 +20,7 @@ import java.util.regex.Pattern;
 @Provider
 public class Auth implements ContainerRequestFilter {
 
-    private final ArrayList<String> URLS = new ArrayList<>(Arrays.asList("greeting", "login", "register", "forgot-password", "reset-password"));
+    private final ArrayList<String> URLS = new ArrayList<>(Arrays.asList("story","story/1","story/2","story/3","story/4","story/5"));
     private final String REGEX = "\\/$";
     private final Pattern pattern = Pattern.compile(REGEX, Pattern.CASE_INSENSITIVE);
 

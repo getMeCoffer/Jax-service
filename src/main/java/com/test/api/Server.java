@@ -1,8 +1,3 @@
-/*!
- * Java REST API
- * Author: Roshan Gade
- * Date: 12/7/18
- */
 package com.test.api;
 
 import com.test.api.framework.Application;
@@ -23,6 +18,7 @@ public class Server {
      * Starts Grizzly HTTP server exposing JAX-RS resources defined in this application.
      */
     private static HttpServer configure() {
+
         final Application app = new Application();
 
         app.setApplicationName("Test API");

@@ -20,6 +20,7 @@ public class Application extends ResourceConfig {
         packages("com.test.api.framework.utils");
         packages("com.test.api.framework.dj");
 
+
         register(new AbstractBinder() {
 
             @Override
@@ -28,6 +29,8 @@ public class Application extends ResourceConfig {
                 bind(Response.class).to(Response.class).in(Singleton.class);
             }
         });
+//        register(CORSFilter.class);
+
     }
 
 }
